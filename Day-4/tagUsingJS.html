@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let divTag = document.createElement('div');
+
+        let para = document.createElement('b');
+        para.textContent = "Event in JS";
+        divTag.appendChild(para);
+
+        divTag.appendChild(document.createElement('br'));
+
+        let button = document.createElement('button');
+        button.textContent = "Click Me";
+        button.id = "btn";
+        divTag.appendChild(button);
+
+        divTag.appendChild(document.createElement('br'));
+
+        let label = document.createElement('label');
+        label.textContent = "Name";
+        divTag.appendChild(label);
+
+        let inputFl = document.createElement('input');
+        inputFl.placeholder = "Chitraksh Suri";
+        divTag.appendChild(inputFl);
+
+        document.body.appendChild(divTag);
+    </script>
+</body>
+
+</html>
