@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleForm.css">
+    <title>Convertor</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Conversion</h1>
+            <div class="input-control">
+                <label for="">Amount</label>
+                <input id="amount" name="amount" type="text" placeholder="Enter Amount">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="">Currency 1</label>
+                <input id="currency" name="currency" type="text" placeholder="Enter Currency">
+            </div>
+            <div class="input-control">
+                <label for="">Currency 2</label>
+                <input id="currency" name="currency" type="text" placeholder="Enter Currency">
+            </div>
+            <div class="btn-cont">
+                <button type="convert" onclick="convertCurr()">Convert</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

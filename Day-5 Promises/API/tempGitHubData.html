@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitraksh</title>
+</head>
+
+<body>
+    <h1>Chitraksh</h1>
+    <h2 id="username">Username:</h2>
+    <h2 id="bio">Bio:</h2>
+    <h2 id="publicRepo">Public Repos:</h2>
+    <button type="submit" id="getButton">Get GitHub Data</button>
+
+    <script>
+        let getButton = document.getElementById("getButton");
+
+        getButton.addEventListener("click", fetchGitHubData);
+
+        async function fetchGitHubData() {
+            let url = "https://api.github.com/users/ChitrakshSuri";
+
+            try {
+                let response = await fetch(url);
+                let data = await response.json();
+
+                updateDOM(data);
+
+            } catch (error) {
+                console.log("Error fetching data: ", error);
+            }
+        }
+
+        function updateDOM(data) {
+            let username = document.getElementById("username");
+            let bio = document.getElementById("bio");
+            let publicRepo = document.getElementById("publicRepo");
+
+            username.innerText = `Username: ${data.name}`;
+            bio.innerText = `Bio: ${data.bio}`;
+            publicRepo.innerText = `Public Repos: ${data.public_repos}`;
+        }
+    </script>
+</body>
+
+</html>
