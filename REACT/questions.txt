@@ -1,0 +1,19 @@
+1- work of react and react dom?
+to make connections react dom is used
+
+-------------------------------------------------------------------------
+
+we can render 2 elements in array form
+example:
+        root.render([h1, ul])
+
+-------------------------------------------------------------------------
+
+    "react-dom": "^18.3.1",
+here ^ carrot symbol is used because it will accept/update minor changes
+and if ~ is used it will only update bugs
+
+-------------------------------------------------------------------------
+
+we use npx if we directly want to download it but dont want to install
+we use npm if we firstly want to download then install to our local system 

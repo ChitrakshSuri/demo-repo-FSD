@@ -1,0 +1,14 @@
+.nav-css {
+  display: flex;
+  justify-content: space-around;
+  background-color: bisque;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: brown;
+  font-size: 20px;
+  font-family: sans-serif;
+}

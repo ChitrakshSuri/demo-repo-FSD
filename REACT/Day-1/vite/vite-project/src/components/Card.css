@@ -1,0 +1,12 @@
+.card-cont {
+  border: 2px solid red;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.card-cont img{
+    width: 290px;
+}
